@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projekti im</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRONCORE — Fitness Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Përshëndetje</h1>
-  <p>Ky është projekti im HTML/CSS.</p>
-  <p>te</p>
-</body>
-</html>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo">IRON<span>CORE</span></a>
+  <ul>
+    <li><a href="#programs">Programet</a></li>
+    <li><a href="#trainers">Trajnerët</a></li>
+    <li><a href="#membership">Anëtarësia</a></li>
+    <li><a href="#schedule">Orari</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#modal-login"    class="btn-nav btn-outline">Hyr</a>
+    <a href="#modal-register" class="btn-nav btn-fill">Regjistrohu</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Platforma #1 e Fitness në Shqipëri</div>
+    <h1 class="hero-title">FORGO<span class="acc">T</span><br><span class="out">YOUR</span><br>LIMITS</h1>
+    <p class="hero-desc">Trajnerë profesionistë, plane stërvitjeje të personalizuara dhe anëtarësi fleksibile. Fillo udhëtimin tënd drejt versionit më të mirë të vetes sot.</p>
+    <div class="hero-cta">
+      <a href="#modal-register" class="btn-hero primary">Fillo Sot — Falas</a>
+      <a href="#schedule"       class="btn-hero secondary">Shiko Orarin →</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">1,240</div><div class="stat-lbl">Anëtarë Aktivë</div></div>
+      <div><div class="stat-num">18</div>   <div class="stat-lbl">Trajnerë Expert</div></div>
+      <div><div class="stat-num">96%</div>  <div class="stat-lbl">Kënaqësi</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <svg width="240" height="400" viewBox="0 0 240 400" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 50px rgba(232,255,0,.35))">
+      <circle cx="120" cy="55" r="34" fill="#e8ff00" opacity=".9"/>
+      <rect x="88" y="94" width="64" height="96" rx="10" fill="#e8ff00" opacity=".85"/>
+      <rect x="32" y="99" width="54" height="22" rx="11" fill="#e8ff00" opacity=".7"/>
+      <circle cx="22" cy="110" r="16" fill="#1a1a1a" stroke="#e8ff00" stroke-width="3"/>
+      <circle cx="2"  cy="110" r="11" fill="#e8ff00" opacity=".4"/>
+      <rect x="154" y="99" width="54" height="22" rx="11" fill="#e8ff00" opacity=".7"/>
+      <circle cx="218" cy="110" r="16" fill="#1a1a1a" stroke="#e8ff00" stroke-width="3"/>
+      <circle cx="238" cy="110" r="11" fill="#e8ff00" opacity=".4"/>
+      <rect x="0" y="105" width="240" height="9" rx="4" fill="#444"/>
+      <rect x="91" y="191" width="30" height="118" rx="9" fill="#e8ff00" opacity=".7"/>
+      <rect x="119" y="191" width="30" height="118" rx="9" fill="#e8ff00" opacity=".6"/>
+      <ellipse cx="106" cy="316" rx="22" ry="11" fill="#e8ff00" opacity=".45"/>
+      <ellipse cx="134" cy="316" rx="22" ry="11" fill="#e8ff00" opacity=".4"/>
+      <defs><radialGradient id="g1" cx="50%" cy="50%"><stop offset="0%" stop-color="#e8ff00"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+      <ellipse cx="120" cy="210" rx="90" ry="170" fill="url(#g1)" opacity=".1"/>
+    </svg>
+    <div class="hero-badge">🏆 KAMPION SHQIPËRIE 2024</div>
+  </div>
+</section>
