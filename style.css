@@ -75,3 +75,53 @@ section { padding:100px 60px; }
 .section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(3rem,5vw,5.5rem); line-height:.9; letter-spacing:2px; }
 .section-title .out { -webkit-text-stroke:1px var(--muted); color:transparent; }
 
+/* ══════════════════════════════════
+   PROGRAMS + RADIO FILTER
+══════════════════════════════════ */
+#programs { background:var(--bg); }
+.prog-radio { display:none; }
+.prog-filters { display:flex; gap:12px; margin-bottom:40px; flex-wrap:wrap; }
+.prog-filter-lbl { font-family:'Barlow Condensed',sans-serif; font-size:.8rem; letter-spacing:2px; text-transform:uppercase; padding:10px 24px; border:1px solid var(--border); color:var(--muted); cursor:pointer; transition:all .2s; }
+.prog-filter-lbl:hover { border-color:var(--accent); color:var(--accent); }
+#f-all:checked ~ .prog-filters label[for="f-all"],
+#f-beg:checked ~ .prog-filters label[for="f-beg"],
+#f-med:checked ~ .prog-filters label[for="f-med"],
+#f-adv:checked ~ .prog-filters label[for="f-adv"] { background:var(--accent); border-color:var(--accent); color:#000; font-weight:700; }
+.programs-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+.program-card { background:var(--card); padding:48px 36px; border:1px solid var(--border); position:relative; overflow:hidden; transition:transform .3s; }
+.program-card::before { content:''; position:absolute; bottom:0; left:0; width:100%; height:3px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .3s; }
+.program-card:hover::before { transform:scaleX(1); }
+.program-card:hover { transform:translateY(-4px); }
+.prog-icon  { font-size:2.5rem; margin-bottom:20px; }
+.prog-level { font-family:'Barlow Condensed',sans-serif; font-size:.7rem; letter-spacing:3px; text-transform:uppercase; color:var(--accent); margin-bottom:12px; }
+.prog-name  { font-family:'Bebas Neue',sans-serif; font-size:2rem; letter-spacing:1px; margin-bottom:12px; }
+.prog-desc  { font-size:.9rem; color:#777; line-height:1.6; margin-bottom:24px; }
+.prog-meta  { display:flex; gap:20px; font-family:'Barlow Condensed',sans-serif; font-size:.8rem; letter-spacing:1px; color:var(--muted); margin-bottom:28px; }
+/* filter show/hide */
+#f-beg:checked ~ .programs-grid .program-card[data-level="Mesatar"],
+#f-beg:checked ~ .programs-grid .program-card[data-level="Avancuar"] { display:none; }
+#f-med:checked ~ .programs-grid .program-card[data-level="Fillestar"],
+#f-med:checked ~ .programs-grid .program-card[data-level="Avancuar"] { display:none; }
+#f-adv:checked ~ .programs-grid .program-card[data-level="Fillestar"],
+#f-adv:checked ~ .programs-grid .program-card[data-level="Mesatar"] { display:none; }
+
+/* ══════════════════════════════════
+   GENERIC CARD BUTTON
+══════════════════════════════════ */
+.btn-card { display:inline-block; width:100%; text-align:center; font-family:'Barlow Condensed',sans-serif; font-size:.8rem; letter-spacing:2px; text-transform:uppercase; padding:12px 28px; background:transparent; border:1px solid var(--border); color:var(--white); transition:all .2s; }
+.btn-card:hover { background:var(--accent); border-color:var(--accent); color:#000; font-weight:700; }
+
+/* ══════════════════════════════════
+   TRAINERS
+══════════════════════════════════ */
+#trainers { background:var(--bg2); }
+.trainers-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.trainer-card { background:var(--card); border:1px solid var(--border); overflow:hidden; transition:transform .3s; }
+.trainer-card:hover { transform:translateY(-6px); }
+.trainer-photo { width:100%; height:260px; background:linear-gradient(135deg,#1a1a1a,#2a2a1a); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.trainer-avatar { font-size:5rem; }
+.trainer-spec { position:absolute; bottom:0; left:0; right:0; background:var(--accent); color:#000; font-family:'Barlow Condensed',sans-serif; font-size:.7rem; letter-spacing:2px; text-transform:uppercase; padding:8px 16px; font-weight:700; }
+.trainer-info { padding:24px; }
+.trainer-name  { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:1px; margin-bottom:4px; }
+.trainer-exp   { font-family:'Barlow Condensed',sans-serif; font-size:.8rem; color:var(--muted); letter-spacing:1px; margin-bottom:12px; }
+.trainer-stars { color:var(--accent); font-size:.9rem; margin-bottom:16px; }
