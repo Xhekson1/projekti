@@ -316,5 +316,102 @@
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a href="#hero" class="footer-logo">IRON<span>CORE</span></a>
+      <p class="footer-desc">Platforma premium e fitness-it në Shqipëri. Transformo trupin dhe mendjen tënde me eksperte të çertifikuar ndërkombëtarisht.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shërbime</h4>
+      <ul><li><a href="#programs">Programet</a></li><li><a href="#trainers">Trajnerët</a></li><li><a href="#membership">Anëtarësia</a></li><li><a href="#schedule">Orari</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kompania</h4>
+      <ul><li><a href="#">Rreth Nesh</a></li><li><a href="#">Blog</a></li><li><a href="#">Karriera</a></li><li><a href="#">Kontakti</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakti</h4>
+      <ul><li><a href="#">📍 Durrës, Shqipëri</a></li><li><a href="#">📞 +355 69 123 4567</a></li><li><a href="#">✉ info@ironcore.al</a></li><li><a href="#">⏰ E Hënë–E Shtunë, 6–22</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 IRONCORE. Të gjitha të drejtat të rezervuara.</span>
+    <span>Ndërtuar me 💪 në Shqipëri</span>
+  </div>
+</footer>
 
-<p>testim</p>
+<!-- ════════════════════════════════
+     MODALS  (hapen me :target)
+════════════════════════════════ -->
+
+<!-- LOGIN -->
+<div class="modal-overlay" id="modal-login">
+  <div class="modal">
+    <a href="#" class="modal-close">✕</a>
+    <div class="modal-tag">// Hyr në llogarinë tënde</div>
+    <h2 class="modal-title">KYÇU</h2>
+    <div class="fgroup"><label>Email</label><input type="email" placeholder="email@juaj.com"></div>
+    <div class="fgroup"><label>Fjalëkalimi</label><input type="password" placeholder="••••••••"></div>
+    <a href="#" class="btn-submit">HYRJA →</a>
+    <div class="form-switch">Nuk ke llogari? <a href="#modal-register">Regjistrohu</a></div>
+  </div>
+</div>
+
+<!-- REGISTER -->
+<div class="modal-overlay" id="modal-register">
+  <div class="modal">
+    <a href="#" class="modal-close">✕</a>
+    <div class="modal-tag">// Krijo llogarinë tënde</div>
+    <h2 class="modal-title">REGJISTROHU</h2>
+    <div class="frow">
+      <div class="fgroup"><label>Emri</label><input type="text" placeholder="Emri"></div>
+      <div class="fgroup"><label>Mbiemri</label><input type="text" placeholder="Mbiemri"></div>
+    </div>
+    <div class="fgroup"><label>Email</label><input type="email" placeholder="email@juaj.com"></div>
+    <div class="fgroup"><label>Fjalëkalimi</label><input type="password" placeholder="Min. 6 karaktere"></div>
+    <div class="fgroup"><label>Qyteti</label>
+      <select><option value="">Zgjidh qytetin...</option><option>Durrës</option><option>Tiranë</option><option>Shkodër</option><option>Vlorë</option><option>Elbasan</option></select>
+    </div>
+    <a href="#" class="btn-submit">REGJISTROHU FALAS →</a>
+    <div class="form-switch">Ke llogari? <a href="#modal-login">Hyr</a></div>
+  </div>
+</div>
+
+<!-- PLANS -->
+<div class="modal-overlay" id="modal-plan-1">
+  <div class="modal">
+    <a href="#" class="modal-close">✕</a>
+    <div class="modal-tag">// Konfirmo anëtarësinë</div>
+    <h2 class="modal-title">BASIC — 2,900 L/muaj</h2>
+    <div class="fgroup"><label>Metoda e pagesës</label><select><option>Kartë Krediti</option><option>Kartë Debiti</option><option>Transfertë Bankare</option></select></div>
+    <div class="fgroup"><label>Numri i kartës</label><input type="text" placeholder="4242 4242 4242 4242"></div>
+    <div class="frow"><div class="fgroup"><label>Skadenca</label><input type="text" placeholder="MM/YY"></div><div class="fgroup"><label>CVV</label><input type="text" placeholder="123" maxlength="3"></div></div>
+    <a href="#" class="btn-submit">KONFIRMO BLERJEN →</a>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-plan-2">
+  <div class="modal">
+    <a href="#" class="modal-close">✕</a>
+    <div class="modal-tag">// Konfirmo anëtarësinë</div>
+    <h2 class="modal-title">PRO — 5,500 L/muaj</h2>
+    <div class="fgroup"><label>Metoda e pagesës</label><select><option>Kartë Krediti</option><option>Kartë Debiti</option><option>Transfertë Bankare</option></select></div>
+    <div class="fgroup"><label>Numri i kartës</label><input type="text" placeholder="4242 4242 4242 4242"></div>
+    <div class="frow"><div class="fgroup"><label>Skadenca</label><input type="text" placeholder="MM/YY"></div><div class="fgroup"><label>CVV</label><input type="text" placeholder="123" maxlength="3"></div></div>
+    <a href="#" class="btn-submit">KONFIRMO BLERJEN →</a>
+  </div>
+</div>
+<div class="modal-overlay" id="modal-plan-3">
+  <div class="modal">
+    <a href="#" class="modal-close">✕</a>
+    <div class="modal-tag">// Konfirmo anëtarësinë</div>
+    <h2 class="modal-title">ELITE — 9,900 L/muaj</h2>
+    <div class="fgroup"><label>Metoda e pagesës</label><select><option>Kartë Krediti</option><option>Kartë Debiti</option><option>Transfertë Bankare</option></select></div>
+    <div class="fgroup"><label>Numri i kartës</label><input type="text" placeholder="4242 4242 4242 4242"></div>
+    <div class="frow"><div class="fgroup"><label>Skadenca</label><input type="text" placeholder="MM/YY"></div><div class="fgroup"><label>CVV</label><input type="text" placeholder="123" maxlength="3"></div></div>
+    <a href="#" class="btn-submit">KONFIRMO BLERJEN →</a>
+  </div>
+</div>
+
+
